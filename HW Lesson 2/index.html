@@ -41,8 +41,17 @@
     Наприклад - ПрИвІт вСіМ воно перетворить на пРИВІТ ВСІМ, а це неправильно, має бути пРиВіТ ВсІм 
 */
 
-
+    // Перероблене друге завдання
     
+    let text = 'Test'
+    let textSplit = text.split('')
+
+    for(let i = 0; i < textSplit.length; i++){
+      textSplit[i] === textSplit[i].toUpperCase() ? textSplit[i] =  textSplit[i].toLowerCase() : textSplit[i] =  textSplit[i].toUpperCase()
+    }
+    let textJoin = textSplit.join('')
+      console.log(textJoin);
+        
   </script>
 </body>
 </html>
